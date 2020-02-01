@@ -532,7 +532,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background: url(../img/Services1.jpg) center top no-repeat;
 	background-size:cover;
 	width:100%;
-	min-height:658px;
+	min-height:607px;
 }
 .banner_service:before{
 	content: "";
