@@ -881,8 +881,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member {
   text-align: center;
   margin-bottom: 20px;
+  position:relative;
 }
-
+#team .position_box{
+	
+}
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
