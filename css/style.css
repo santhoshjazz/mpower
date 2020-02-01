@@ -505,7 +505,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 .workshop{
-	 background: url(../img/Workshops.jpg) center center no-repeat;
+	 background: url(../img/Workshop.jpg) center center no-repeat;
 	 background-size:contain;
 }
 .coach{
@@ -517,15 +517,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 	 background-size:contain;
 }
 .recruit{
-	background: url(../img/Recruitment.jpeg) center center no-repeat;
+	background: url(../img/Recruitment1.jpeg) center center no-repeat;
 	 background-size:contain;
 }
 .strategy{
-	background: url(../img/Brand_development.jpg) center center no-repeat;
+	background: url(../img/Bran_ Development_Strategy.jpg) center center no-repeat;
 	 background-size:contain;
 }
 .business{
-	background: url(../img/Business_Development.jpeg) center center no-repeat;
+	background: url(../img/Business_Development_Strategy.jpeg) center center no-repeat;
 	 background-size:contain;
 }
 .banner_service{
