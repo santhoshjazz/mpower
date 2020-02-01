@@ -909,9 +909,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 6px;
+	font-size: 18px;
+	color: #000;
 }
 
 #team .member span {
