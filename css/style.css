@@ -509,7 +509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	 background-size:contain;
 }
 .coach{
-	background: url(../img/Coaching.jpg) center center no-repeat;
+	background: url(../img/Coaching.jpeg) center center no-repeat;
 	 background-size:contain;
 }
 .elearn{
@@ -517,16 +517,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 	 background-size:contain;
 }
 .recruit{
-	background: url(../img/Recruitment1.jpeg) center center no-repeat;
+	background: url(../img/Recruitment1.jpg) center center no-repeat;
 	 background-size:contain;
 }
 .strategy{
-	background: url(../img/Bran_ Development_Strategy.jpeg) center center no-repeat;
+	background: url(../img/Bran_Development_Strategy.jpeg) center center no-repeat;
 	 background-size:contain;
 }
 .business{
 	background: url(../img/Business_Development_Strategy.jpg) center center no-repeat;
-	 background-size:contain;
+	 background-size:cover;
 }
 .banner_service{
 	background: url(../img/archispeak.jpg) center top no-repeat;
