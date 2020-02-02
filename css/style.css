@@ -1554,6 +1554,7 @@ word-break: break-all;
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
+  display:inline-block;
 }
 #owl-demo .item img{
 	width:100%;
@@ -1611,7 +1612,7 @@ word-break: break-all;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
 #slider .owl-carousel .owl-wrapper,#slider .owl-carousel{
-	display:block;
+	display:inline-block;
 }
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
