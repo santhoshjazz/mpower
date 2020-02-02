@@ -1567,7 +1567,7 @@ button.slick-next, button.slick-next:hover {
 button.slick-prev, button.slick-prev:hover {
   position: absolute;
   top: 50%;
-  left: -56px;
+  left: -30px;
   z-index: 1;
   width: 17px;
   height: 26px;
