@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
           }
         },
 		{
-           breakpoint: 639,
+           breakpoint: 600,
            settings: {
               arrows: false,
               slidesToShow: 2,
