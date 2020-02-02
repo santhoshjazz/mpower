@@ -235,31 +235,65 @@
     ============================-->
 	<section id="slider">
 		<div class="container">
-			<div id="owl-demo" class="owl-carousel owl-theme">
-				<div class="item"><div class="width"><img src="img/sliderlogo/1.jpeg"></div></div>
-				<div class="item"><div class="width"><img src="baby-lying.jpg"></div></div>
-				<div class="item"><div class="width"><img src="Babys-Immune.jpg"></div></div>
-				<div class="item"><div class="width"><img src="blanket-baby-article.jpg"></div></div>
-				<div class="item"><div class="width"><img src="maxresdefault.jpg"></div></div>
-				<div class="item"><div class="width"><img src="pexels-photo.jpeg"></div></div>
-				<div class="item"><div class="width"><img src="your-baby.jpg"></div></div>
-				<div class="item"><div class="width"><img src="images.jpg"></div></div>
-				<div class="item"><div class="width"><img src="cute-baby.jpg"></div></div>
-				<div class="item"><div class="width"><img src="first-christmas.jpg"></div></div>
-				<div class="item"><div class="width"><img src="changing-your.jpg"></div></div>
-				<div class="item"><div class="width"><img src="b-onepiece.jpg"></div></div>
-				<div class="item"><div class="width"><img src="compressed.jpg"></div></div>
-				<div class="item"><div class="width"><img src="cmprsd_40.jpg"></div></div>
-				<div class="item"><div class="width"><img src="cmprsd_401.jpg"></div></div>
-			</div>
+			<d<div class="Container">
+  <h3 class="Head">Featured Products <span class="Arrows"></span></h3>
+  <!-- Carousel Container -->
+  <div class="SlickCarousel">
+    <!-- Item -->
+    <div class="ProductBlock">
+      <div class="Content">
+        <div class="img-fill">
+          <img src="https://41.media.tumblr.com/4f61413965b53d9cc901e2f8241a64bd/tumblr_nh1zmuXYUM1su4a4ho1_1280.jpg">
+        </div>
+        <h3>Block Title</h3>
+      </div>
+    </div>
+    <!-- Item -->
+    <!-- Item -->
+    <div class="ProductBlock">
+      <div class="Content">
+        <div class="img-fill">
+          <img src="https://41.media.tumblr.com/4f61413965b53d9cc901e2f8241a64bd/tumblr_nh1zmuXYUM1su4a4ho1_1280.jpg">
+        </div>
+        <h3>Block Title</h3>
+      </div>
+    </div>
+    <!-- Item -->
+    <!-- Item -->
+    <div class="ProductBlock">
+      <div class="Content">
+        <div class="img-fill">
+          <img src="https://41.media.tumblr.com/4f61413965b53d9cc901e2f8241a64bd/tumblr_nh1zmuXYUM1su4a4ho1_1280.jpg">
+        </div>
+        <h3>Block Title</h3>
+      </div>
+    </div>
+    <!-- Item -->
+    <!-- Item -->
+    <div class="ProductBlock">
+      <div class="Content">
+        <div class="img-fill">
+          <img src="https://41.media.tumblr.com/4f61413965b53d9cc901e2f8241a64bd/tumblr_nh1zmuXYUM1su4a4ho1_1280.jpg">
+        </div>
+        <h3>Block Title</h3>
+      </div>
+    </div>
+    <!-- Item -->
+    <!-- Item -->
+    <div class="ProductBlock">
+      <div class="Content">
+        <div class="img-fill">
+          <img src="https://41.media.tumblr.com/4f61413965b53d9cc901e2f8241a64bd/tumblr_nh1zmuXYUM1su4a4ho1_1280.jpg">
+        </div>
+        <h3>Block Title</h3>
+      </div>
+    </div>
+    <!-- Item -->
+  </div>
+  <!-- Carousel Container -->
+</div>
  
-			<div class="customNavigation">
-			  <a class="btn prev">Previous</a>
-			  <a class="btn next">Next</a>
-			  <a class="btn play">Autoplay</a>
-			  <a class="btn stop">Stop</a>
-			</div>
-		</div>
+			
 	</section>
 	
 	
@@ -572,33 +606,31 @@
 
 </body>
 <script>
-$(document).ready(function() {
- 
-  var owl = $("#owl-demo");
- 
-  owl.owlCarousel({
-      items : 10, //10 items above 1000px browser width
-      itemsDesktop : [1000,5], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,3], // betweem 900px and 601px
-      itemsTablet: [600,2], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-  });
- 
-  // Custom Navigation Events
-  $(".next").click(function(){
-    owl.trigger('owl.next');
+$(document).ready(function(){
+  $(".SlickCarousel").slick({
+    rtl:false, // If RTL Make it true & .slick-slide{float:right;}
+    autoplay:true, 
+    autoplaySpeed:5000, //  Slide Delay
+    speed:800, // Transition Speed
+    slidesToShow:4, // Number Of Carousel
+    slidesToScroll:1, // Slide To Move 
+    pauseOnHover:false,
+    appendArrows:$(".Container .Head .Arrows"), // Class For Arrows Buttons
+    prevArrow:'<span class="Slick-Prev"></span>',
+    nextArrow:'<span class="Slick-Next"></span>',
+    easing:"linear",
+    responsive:[
+      {breakpoint:801,settings:{
+        slidesToShow:3,
+      }},
+      {breakpoint:641,settings:{
+        slidesToShow:3,
+      }},
+      {breakpoint:481,settings:{
+        slidesToShow:1,
+      }},
+    ],
   })
-  $(".prev").click(function(){
-    owl.trigger('owl.prev');
-  })
-  $(".play").click(function(){
-    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-  })
-  $(".stop").click(function(){
-    owl.trigger('owl.stop');
-  })
- 
-});
-
+})
 </script>
 </html>
