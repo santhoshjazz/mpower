@@ -1610,6 +1610,9 @@ word-break: break-all;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
+#slider .owl-carousel .owl-wrapper,#slider .owl-carousel{
+	display:block;
+}
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
 	position: relative;
