@@ -1522,6 +1522,9 @@ word-break: break-all;
     border-radius: 3px;
 	
 }
+#banner_middle{
+	margin-bottom:60px;
+}
 .bg_blue h3,.bg_blue p,.bg_blue h4{color:#fff;}
 .bg_blue h4{
 	font-size:18px;
