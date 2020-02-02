@@ -617,7 +617,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   font-size: 14px;
 }
-
+#about .icon{
+	text-align:center;
+}
+#about .icon i{
+	font-size:60px;
+	color:#4869e8;
+}
 /* Facts Section
 --------------------------------*/
 
