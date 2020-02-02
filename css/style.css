@@ -505,27 +505,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 .workshop{
-	 background: url(../img/Workshop.jpg) center center no-repeat;
-	 background-size:contain;
+	 background: url(../img/Workshop.jpg) top center no-repeat;
+	 background-size:cover;
 }
 .coach{
-	background: url(../img/Coaching.jpeg) center center no-repeat;
-	 background-size:contain;
+	background: url(../img/Coaching.jpeg) top center no-repeat;
+	 background-size:cover;
 }
 .elearn{
-	background: url(../img/E-learning.jpg) center center no-repeat;
-	 background-size:contain;
+	background: url(../img/E-learning.jpg) top center no-repeat;
+	 background-size:cover;
 }
 .recruit{
-	background: url(../img/Recruitment1.jpg) center center no-repeat;
-	 background-size:contain;
+	background: url(../img/Recruitment1.jpg) top center no-repeat;
+	 background-size:cover;
 }
 .strategy{
-	background: url(../img/Bran_Development_Strategy.jpg) center center no-repeat;
-	 background-size:contain;
+	background: url(../img/Bran_Development_Strategy.jpg) top center no-repeat;
+	 background-size:cover;
 }
 .business{
-	background: url(../img/Business_Development_Strategy.jpg) center center no-repeat;
+	background: url(../img/Business_Development_Strategy.jpg) top center no-repeat;
 	 background-size:cover;
 }
 .banner_service{
