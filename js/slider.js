@@ -15,6 +15,14 @@ jQuery(document).ready(function($) {
             slidesToScroll: 1
           }
         },
+		{
+           breakpoint: 639,
+           settings: {
+              arrows: false,
+              slidesToShow: 2,
+              slidesToScroll: 1
+           }
+        },
         {
            breakpoint: 400,
            settings: {
