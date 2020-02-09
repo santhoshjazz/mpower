@@ -568,7 +568,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .title {
-  color: #333;
+ /*  color: #333; */
+  color: #4869e8;
   font-weight: 700;
   font-size: 32px;
 }
