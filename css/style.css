@@ -784,7 +784,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #4869e8;
   border: 2px solid #4869e8;
 }
-
+#call-to-action h4,#call-to-action h5,#call-to-action h6{
+	color:#fff
+}
 /* Portfolio Section
 --------------------------------*/
 
