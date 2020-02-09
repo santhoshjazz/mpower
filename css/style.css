@@ -1153,12 +1153,12 @@ word-break: break-all;
   #about .about-container .title {
     padding-top: 15px;
   }
-  #header .container {
+  
+}
+@media (max-width: 767px){
+	#header .container {
 		max-width:100%;
 	}
-}
-@media (max-width: 576px){
-	
 }
 /* MY style */
 #about p{margin-bottom:10px;}
