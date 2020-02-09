@@ -526,7 +526,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 	 background-size:cover;
 }
 .case_studies{
-	background: url(../img/Case_studies.jpg) center top no-repeat;
+	background: url(../img/Case_studies.jpg) center center no-repeat;
 	background-size:cover;
 	width:100%;
 	min-height:658px;
@@ -954,6 +954,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin: 0 2px;
 }
+
+#casestudies_page{
+	padding:60px 0;
+}
+
 
 /* Contact Section
 --------------------------------*/
