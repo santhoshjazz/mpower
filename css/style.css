@@ -781,6 +781,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  margin-bottom:40px;
 }
 
 #call-to-action .cta-text {
@@ -1554,6 +1555,9 @@ word-break: break-all;
     padding: 30px 30px;
     border-radius: 3px;
 	
+}
+#banner_middle.bottom_section .bg_blue{
+	margin-top:0
 }
 #banner_middle{
 	margin-bottom:10px;
