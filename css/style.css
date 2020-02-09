@@ -514,11 +514,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 	 background-size:cover;
 }
 .coach{
-	background: url(../img/Coaching.jpeg) top center no-repeat;
+	background: url(../img/Coaching.jpg) center center no-repeat;
 	 background-size:cover;
 }
 .elearn{
-	background: url(../img/E-learning.jpg) top center no-repeat;
+	background: url(../img/E-learning.jpg) center center no-repeat;
 	 background-size:cover;
 }
 .recruit{
