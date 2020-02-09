@@ -486,7 +486,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   margin-bottom: 30px;
 }
-
+#services .section-header .section-title{
+	margin-bottom: 45px;
+}
 .section-header .section-description {
   text-align: center;
   padding-bottom: 40px;
