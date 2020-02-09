@@ -479,7 +479,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header .section-title {
   font-size: 32px;
-  color: #111;
+ /*  color: #111; */
+  color: #4869e8;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
