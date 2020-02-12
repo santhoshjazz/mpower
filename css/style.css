@@ -1445,7 +1445,7 @@ word-break: break-all;
 #testimonials .testimonial-item h3 {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(17, 17, 17);
+   color:#fff;
     margin: 0 0px 5px;
 }
 #testimonials .testimonial-item h4 {
@@ -1456,7 +1456,7 @@ word-break: break-all;
 #testimonials .testimonial-item p {
     font-style: italic;
     margin: 0px auto 15px;
-	color: rgb(102, 102, 102);
+	color: color:#fff;
 	font-size:16px;
 }
 #testimonials .testimonial-item .quote-sign-left {
