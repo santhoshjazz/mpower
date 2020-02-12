@@ -1485,6 +1485,7 @@ word-break: break-all;
     border-color: rgb(255, 255, 255);
     border-image: initial;
     margin: 0px auto;
+	height:120px;
 }
 #testimonials .carousel .img-box img ,#testimonials .carousel .img-box{
    width: 120px;
