@@ -1455,7 +1455,7 @@ word-break: break-all;
 }
 #testimonials .testimonial-item p {
     font-style: italic;
-    margin: 0px auto 15px;
+    margin: 15px auto 15px;
 	color:#fff;
 	font-size:16px;
 }
