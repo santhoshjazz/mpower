@@ -1518,6 +1518,9 @@ word-break: break-all;
 .bg_blue h4{
 	font-size:18px;
 }
+.bottom_section .bg_blue h5{
+	font-size:16px;
+}
 .bg_blue p{
 	margin-bottom:5px;
 	font-size:22px
