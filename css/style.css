@@ -1347,7 +1347,11 @@ word-break: break-all;
     cursor: pointer;
 }
 
-
+#testimonials{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/testmonial.png) center center;
+    background-size: cover;
+    padding: 80px 0;
+}
 #testimonials .carousel {
 	margin: 0 auto;
 	padding-bottom: 10px;
