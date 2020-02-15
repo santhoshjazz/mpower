@@ -568,6 +568,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 0;
 	height:658px;
 }
+.banner_service #hero{
+	background:none;
+}
 .case_studies:before{
 	content: "";
     background: rgba(0, 0, 0, 0.6);
