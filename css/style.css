@@ -543,6 +543,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background: url(../img/Business_Development_Strategy.jpg) center center no-repeat;
 	 background-size:cover;
 }
+.resource{
+	background: url(../img/hr_managemet.jpg) center center no-repeat;
+	 background-size:cover;
+}
+.organisational{
+	background: url(../img/organisation.jpg) center center no-repeat;
+	 background-size:cover;
+}
+
 .banner_service{
 	background: url(../img/Services1.jpg) center top no-repeat;
 	background-size:cover;
