@@ -160,7 +160,7 @@ h6 {
   right: 0;
 }
 
-#hero .hero-container {
+#hero .hero-container, .hero-container {
   position: absolute;
   bottom: 0;
   top: 0;
