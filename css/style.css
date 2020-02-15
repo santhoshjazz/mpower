@@ -186,7 +186,7 @@ h6 {
   text-align: center;
 }
 
-#hero h1 {
+#hero h1,.hero-container h1 {
   margin: 470px 0 10px 0;
   font-size: 48px;
   font-weight: 500;
@@ -195,13 +195,13 @@ h6 {
   color: #fff;
 }
 
-#hero h2 {
+#hero h2 ,.hero-container h2{
   color: #eee;
   margin-bottom: 50px;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started ,.hero-container .btn-get-started{
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -216,7 +216,7 @@ h6 {
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+#hero .btn-get-started:hover ,.hero-container .btn-get-started:hover{
   background: #4869e8;
   border: 2px solid #4869e8;
 }
