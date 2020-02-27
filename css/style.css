@@ -149,13 +149,13 @@ h6 {
   background-size: cover;
   position: relative;
 }
-#carouselExampleIndicators .carousel-item{
+#demo .carousel-item{
 	position:relative;
 	width: 100%;
-	height: 100vh;
+	height: 642px;
 	background-size:cover !important;
 }
-#hero:before,#carouselExampleIndicators .carousel-item:before {
+#hero:before,#demo .carousel-item:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
