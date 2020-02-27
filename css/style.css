@@ -149,14 +149,14 @@ h6 {
   background-size: cover;
   position: relative;
 }
-#carousel-example-1z .carousel-item{
+#demo .carousel-item{
 	position:relative;
 	width: 100%;
-	height: 570px;
+	height: 642px;
 	background-size:cover !important;
 	background-color:transparent;
 }
-#hero:before,#carousel-example-1z .carousel-item:before {
+#hero:before,#demo .carousel-item:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -165,9 +165,7 @@ h6 {
   left: 0;
   right: 0;
 }   
-#carousel-example-1z .carousel-item img{
-	
-}
+
 #hero .hero-container, .hero-container {
   position: absolute;
   bottom: 0;
