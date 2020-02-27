@@ -154,7 +154,8 @@ h6 {
 	height: 642px;
 	background-size:cover !important;
 	background-color:transparent !important;
-	background-repeat:no-repeat !important
+	background-repeat:no-repeat !important;
+	background-position:center center !important;
 }
 #hero:before,#demo .carousel-item:before {
   content: "";
