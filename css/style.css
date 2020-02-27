@@ -150,7 +150,6 @@ h6 {
   position: relative;
 }
 #demo .carousel-item{
-	position:relative;
 	width: 100%;
 	height: 642px;
 	background-size:cover !important;
