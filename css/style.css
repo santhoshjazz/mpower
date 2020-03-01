@@ -1651,6 +1651,9 @@ word-break: break-all;
 	#testimonials .carousel .carousel-indicators{
 		bottom:-25px
 	}
+	#hero h1, .hero-container h1{
+		font-size:35px;
+	}
 }
 
 
