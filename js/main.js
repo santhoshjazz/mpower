@@ -1,3 +1,6 @@
+var getUrl 			= window.location;
+var pageUrl 		= getUrl.pathname.split('/')[1];
+var pageUrl2 		= getUrl.pathname.split('/')[2];
 jQuery(document).ready(function ($) {
 
   // Header fixed and Back to top button
@@ -126,5 +129,14 @@ jQuery(document).ready(function ($) {
   });
 
   // custom code
-
+	if(pageUrl=='service.html' || pageUrl2=='service.html'){
+		$('.nav-menu').find('li').each(function(){
+			
+			console.log($(this));
+			if($(this).find('a').text()=='Services')
+				$(this).addClass('menu-active');
+			else
+				$(this).removeClass('menu-active');
+		});
+	}
 });
