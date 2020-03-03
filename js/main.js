@@ -2,9 +2,10 @@ var getUrl 			= window.location;
 var pageUrl 		= getUrl.pathname.split('/')[1];
 var pageUrl2 		= getUrl.pathname.split('/')[2];
 jQuery(document).ready(function ($) {
-
+	 $(document).on("scroll", onScroll);
   // Header fixed and Back to top button
   $(window).scroll(function () {
+	 /*  */
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
@@ -127,16 +128,103 @@ jQuery(document).ready(function ($) {
     delay: 10,
     time: 1000
   });
+	$('a[href*=#]').bind('click', function(e) {
+		 if ($(".home").length >0){ 
+			e.preventDefault(); // prevent hard jump, the default behavior
 
-  // custom code
-	if(pageUrl=='service.html' || pageUrl2=='service.html'){
-		$('.nav-menu').find('li').each(function(){
-			
-			console.log($(this));
-			if($(this).find('a').text()=='Services')
-				$(this).addClass('menu-active');
-			else
-				$(this).removeClass('menu-active');
+			var target = '#'+$(this).attr("href").split('#')[1]; // Set the target as variable
+			var notNumber = isNaN(parseInt($(this).attr("href").split('#')[1]));
+			//console.log(target);
+			console.log(target);
+			console.log($('#header').height());
+			if(target != '' && target != undefined && target != null && isNaN($(this).attr("href").split('#')[1])){
+				var theight = $(target).offset().top ;//- $('#masthead').height()-65;
+				// perform animated scrolling by getting top-position of target-element and set it as scroll target
+				console.log($(target).offset().top);
+				console.log(theight);
+				var id = $('#nav-menu li a').index(this);
+				$('#nav-menu').removeClass("toggled-on")//to close nav li list
+				$(window).stop().animate({
+						scrollTop: theight
+				}, 600, function() {
+					console.log(id)
+					$('.menu-active').removeClass('menu-active');
+					$('#nav-menu li:eq('+id+')').addClass('menu-active');
+					
+					history.pushState({},'',target)
+						//location.hash = target; //attach the hash (#jumptarget) to the pageurl
+				});
+			}else if(!notNumber){
+				console.log("redirection");
+				window.location.href = $(this).attr("href");
+				return true;
+			}
+			return false;
+		} 
+	});
+	
+	/* remove default class*/
+	//to scroll specific blog -- start
+	//if($('body .scroll-to-post .scroll-post').length){
+		var scrollPost = window.location.hash.split('#')[1];
+		$(window).load(function(){
+			console.log(scrollPost);
+			if($('#'+scrollPost).length)
+			{
+				var header = $('#header-fixed').height();
+				$('#header').addClass('header-fixed');
+				if($('#header-fixed').length){
+					var top = parseInt($('#'+scrollPost).offset().top- header-100);
+					console.log(top);
+					$('html,body').animate({scrollTop:top},1000);
+					console.log(header);
+				}else{
+					var top = parseInt($('#'+scrollPost).offset().top-70);
+					//console.log(top);
+					$('html,body').animate({scrollTop:top},1000);
+				}
+			}
 		});
-	}
+	//}
+
+
 });
+function onScroll(event){
+	var scrollPos = $(document).scrollTop();
+	$('.nav-menu li a').each(function () {
+		var currLink = $(this);
+		var currLi = $(this).parent('li');
+		var value=currLink.attr("href").split('#')[1];
+		var refElement = $('#'+value);
+		console.log(refElement);
+		if(refElement.length){
+		console.log(refElement.position().top);
+		console.log(scrollPos);
+		if($('#casestudies_page').length){
+			if(!$('.menu-active').length)
+			$('.nav-menu li:eq(3)').addClass("menu-active");
+		}else if($('#service_page').length){
+			if(!$('.menu-active').length)
+			$('.nav-menu li:eq(2)').addClass("menu-active");
+		}else{
+			if ((refElement.position().top-72) <= scrollPos ) {
+				$('.nav-menu li').each(function(){
+					$(this).removeClass("menu-active");
+				});
+				currLi.addClass("menu-active");
+			}else if(scrollPos<100){
+				currLi.removeClass("menu-active");
+				if($('#casestudies_page').length)
+				$('.nav-menu li:eq(3)').addClass("menu-active");
+				else
+				$('.nav-menu li:eq(0)').addClass("menu-active");
+			}
+			else{
+				
+				currLi.removeClass("menu-active");
+			}
+		}
+		}
+	}); 
+	
+}
