@@ -798,6 +798,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services.expertise{
 	background:#1a47f5;
 } 
+#services.expertise .section-title{
+	color:#fff;
+}
 /* Call To Action Section
 --------------------------------*/
 
