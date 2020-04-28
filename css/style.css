@@ -536,6 +536,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background: url(../img/Recruitment1.jpg) top center no-repeat;
 	 background-size:cover;
 }
+#strategy{
+	padding-top:30px;
+}
 .strategy{
 	background: url(../img/Bran_Development_Strategy.jpg) center center no-repeat;
 	 background-size:cover;
@@ -1582,9 +1585,25 @@ word-break: break-all;
   transition: transform 2s ease, -webkit-transform 2s ease;
 } */
 
-
-
-
+/* Blogs */
+#blogs{
+	padding: 60px 0;
+}
+#blogs .img-responsive{
+	max-width:100%;
+}
+#blogs .box{
+	padding:20px;
+    text-align: left;
+    border: 1px solid #e6e6e6;
+    background: #fafafa;
+}
+#blogs .box p{
+	margin-top:15px;
+}
+.share_blogs a i{
+	font-size:22px;
+}
 
 @media (min-width: 1024px) {
   #hero {

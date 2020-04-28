@@ -206,6 +206,10 @@ function onScroll(event){
 		}else if($('#service_page').length){
 			if(!$('.menu-active').length)
 			$('.nav-menu li:eq(2)').addClass("menu-active");
+		}
+		else if($('#blogs').length){
+			if(!$('.menu-active').length)
+			$('.nav-menu li:eq(2)').addClass("menu-active");
 		}else{
 			if ((refElement.position().top-72) <= scrollPos ) {
 				$('.nav-menu li').each(function(){
