@@ -207,7 +207,7 @@ function onScroll(event){
 			if(!$('.menu-active').length)
 			$('.nav-menu li:eq(2)').addClass("menu-active");
 		}
-		else if($('#blogs').length){
+		else if($('#blog').length){
 			if(!$('.menu-active').length)
 			$('.nav-menu li:eq(2)').addClass("menu-active");
 		}else{
