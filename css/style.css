@@ -43,7 +43,9 @@ h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
-
+img{
+	max-width:100%;
+}
 /* Prelaoder */
 
 #preloader {
@@ -553,6 +555,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 	width:100%;
 	min-height:658px;
 }
+.blog_banner{
+	background: url(../img/blog_banner.jpg) center center no-repeat;
+	background-size:cover;
+	width:100%;
+	min-height:658px;
+}
 .business{
 	background: url(../img/Business_Development_Strategy.jpg) center center no-repeat;
 	 background-size:cover;
@@ -589,7 +597,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner_service #hero{
 	background:none;
 }
-.case_studies:before{
+.case_studies:before,.blog_banner:before{
 	content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -1601,11 +1609,17 @@ word-break: break-all;
 #blog .section-title{
 	color:#fff
 }
-.blog_img{
-	background: url(../img/why_us.jpg)no-repeat center center;
+.blog_img1,.blog_img2,.blog_img3{
+	background: url(../img/business_stress.jpg)no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 280px;
+}
+.blog_img2{
+	background-image:url(../img/People_Skills.jpg);
+}
+.blog_img3{
+	background-image:url(../img/Sellers.jpg);
 }
 #blog .box .description{
 	padding:20px;
@@ -1615,7 +1629,36 @@ word-break: break-all;
 	display: block;
 	margin-top: 25px;
 }
-   
+#blogs_page{
+	padding: 30px 0 20px 0;
+} 
+#blogs_page img{
+	/* max-width:100%;
+	width:100%; */
+} 
+#blogs_page .description{
+	margin-top:10px;
+}
+.blog_detail_img {
+	background: url(../img/business_stress.jpg)no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    max-width: 350px;
+    margin: auto;
+}
+.blog_detail_img.people_skil{
+	background-image: url(../img/People_Skills.jpg);
+}
+.blog_detail_img.seller{
+	background-image: url(../img/Sellers.jpg);
+}
+.blog_list li{
+	margin-bottom:20px;
+}
+.share_blogs a i{
+	font-size:24px;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
