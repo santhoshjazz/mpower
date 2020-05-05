@@ -1739,6 +1739,9 @@ h5.blog_title{
   #services .title{
 	  font-size:17px;
   }
+  h5.blog_title {
+    min-height: auto;
+  }
 }
 @media (max-width: 640px){
 	#testimonials{
