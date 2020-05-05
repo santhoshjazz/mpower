@@ -194,8 +194,8 @@ function onScroll(event){
 	$('.nav-menu li a').each(function () {
 		var currLink = $(this);
 		var currLi = $(this).parent('li');
-		var value=currLink.attr("href").split('#')[1];
-		var refElement = $('#'+value);
+		var value=currLink.attr("href").split('#')[1];//if add new menu to add href with #  and that set as div id
+		var refElement = $('#'+value);//that div id here get dynamic
 		console.log(refElement);
 		if(refElement.length){
 		console.log(refElement.position().top);
@@ -204,10 +204,6 @@ function onScroll(event){
 			if(!$('.menu-active').length)
 			$('.nav-menu li:eq(3)').addClass("menu-active");
 		}else if($('#service_page').length){
-			if(!$('.menu-active').length)
-			$('.nav-menu li:eq(2)').addClass("menu-active");
-		}
-		else if($('#blog').length){
 			if(!$('.menu-active').length)
 			$('.nav-menu li:eq(2)').addClass("menu-active");
 		}else{
